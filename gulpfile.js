@@ -70,6 +70,13 @@ function serve() {
     });
 }
 
+var ghPages = require('gulp-gh-pages');
+ 
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
+
 // HTML 
 function html(cb) {
     return src(path.src.html, {base: srcPath}) 
