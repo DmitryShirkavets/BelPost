@@ -1,0 +1,32 @@
+.header{
+    background-color: $accentColor;
+    font-family: $headerFont;
+    @include text(30px, 400, 41px, $textColorLight); 
+
+    &__wrapper{
+        max-height: 73px;
+        padding: 14px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left-block{
+        display: flex;
+        gap: 53px;
+    }
+
+    &__weather{
+        position: relative;
+
+        &::after{
+            content: "";
+            background-image: url('./../images/weather.svg');
+            background-size: 28px 28px;
+            height: 28px;
+            width: 28px;
+            position: absolute;
+            top: -5px;
+            right: -35px;
+        }
+    }
+}

@@ -1,7 +1,3 @@
-function test(a, b) {
-    return a + b
-}
-
 // Время и Дата
 
 // При загрузке страницы запускаем функцию
@@ -123,4 +119,3 @@ $('.main__slider').slick({
     autoplay: true,
     autoplaySpeed: 2000,
   });
-//# sourceMappingURL=script.js.map

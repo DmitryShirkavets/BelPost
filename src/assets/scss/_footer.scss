@@ -1,0 +1,52 @@
+.footer{
+    background-color: $accentColor;
+    font-family: $footerFont;
+    padding: 12px 0;
+
+    &__top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+        margin-bottom: 17px;
+    }
+
+    &__logo-svg{
+        max-width: 151px;
+        max-height: 54px;
+    }
+
+    &__info{
+        @include text(16px, 500, 19px, $textColorLight);
+        text-align: right;
+
+        &:last-child{
+            text-align: left;
+        }
+    }
+
+    &__info-link{
+        @include text(16px, 500, 19px, $textColorLight);
+    }
+
+    &__bottom{
+        @include text(14px, 600, 17px, $textColorLight);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__developed{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 19px;  
+    }
+
+    &__developed-hightech{
+        .footer__developed-svg{
+            width: 95px;
+            height: 14px;
+        }
+    }
+}
