@@ -572,7 +572,7 @@ a {
 }
 
 .menu__back {
-    background: url("./../images/Back.svg") no-repeat center/contain;
+    background: url("./../images/back.svg") no-repeat center/contain;
     width: 62px;
     height: 40px;
     border: none;
