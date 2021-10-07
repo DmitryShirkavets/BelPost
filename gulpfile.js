@@ -70,6 +70,7 @@ function serve() {
     });
 }
 
+// GitHub Pages
 var ghPages = require('gulp-gh-pages');
  
 gulp.task('deploy', function() {
